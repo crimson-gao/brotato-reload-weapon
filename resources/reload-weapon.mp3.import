@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/reload-weapon.mp3-44f89d7e24a94a226e3f892e08ce174c.mp3str"
+
+[deps]
+
+source_file="res://mods-unpacked/Crimson-ReloadWeapon/resources/reload-weapon.mp3"
+dest_files=[ "res://.import/reload-weapon.mp3-44f89d7e24a94a226e3f892e08ce174c.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
