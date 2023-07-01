@@ -4,16 +4,16 @@ const MYMODNAME_LOG = "Crimson-ReloadWeapon"
 const MYMODNAME_MOD_DIR = "Crimson-ReloadWeapon/"
 export (Array, Resource) var reload_weapon_sounds:Array
 export var reload_weapon_icon: Resource
-var dir = ""
+var resource_dir = ""
+var log_file: File = null 
 
 func _init():
-	dir = ModLoaderMod.get_unpacked_dir() + MYMODNAME_MOD_DIR
-	var test = load(dir + "extensions/reload.tres")
-	var default_sound = preload("res://resources/sounds/level_up.wav")
-	reload_weapon_icon = preload("res://items/characters/apprentice/apprentice_icon.png")
+	resource_dir = ModLoaderMod.get_unpacked_dir() + MYMODNAME_MOD_DIR + "resources/"
+	var default_sound = load(resource_dir + "reload-weapon.mp3")
+	reload_weapon_icon = load(resource_dir + "icon-reload.png")
 	reload_weapon_sounds = [default_sound]
-	
-	
+
+		
 # play sound and display text
 func on_reload_weapon():
 	var pos = _floating_text_manager.player.global_position - Vector2(0, 50)

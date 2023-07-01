@@ -1,7 +1,7 @@
 {
   "name": "ReloadWeapon",
   "namespace": "Crimson",
-  "version_number": "1.0.0",
+  "version_number": "1.0.1",
   "description": "按R键手动换弹，支持左轮手枪与链枪，体验fps游戏的快乐。\nPress 'R' to reload your weapons(chain gun or revolver) manually, enjoy brotato like fps games.",
   "website_url": "https://github.com/crimson-gao/brotato-reload-weapon",
   "dependencies": [],
